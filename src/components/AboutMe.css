@@ -1,0 +1,100 @@
+/* Gallery.css */
+
+/* Base styles (apply to all screens) */
+.gallery-container {
+    background-color: #363C43;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    height: auto;
+    min-height: 260px;
+    width: 100%;
+    max-width: 665px;
+    padding: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.button,
+.buttan {
+    padding: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button {
+    background-color: gray;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.849);
+}
+
+.buttan {
+    background-color: black;
+    border-radius: 12px;
+}
+
+.button:hover,
+.buttan:hover {
+    background-color: rgb(24, 21, 21);
+}
+
+.arrow-button {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(48, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.849);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+    background-color: rgb(5, 3, 3);
+}
+
+/* Media queries for screens 768px and above */
+@media (min-width: 768px) {
+    .gallery-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .button,
+    .buttan {
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .arrow-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gallery-container .flex.flex-wrap {
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .gallery-container .flex.justify-between {
+        justify-content: space-between;
+    }
+}
